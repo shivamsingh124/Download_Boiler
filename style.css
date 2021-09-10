@@ -1114,3 +1114,30 @@ footer .icons i {
     margin-right: 5px;
     margin-top: 8px !important;
 }
+.fa-hospital-user::before{content:"\f80d"}
+.h1s{
+    /* line-break: anywhere; */ 
+    overflow: contain;
+    font-size: 16px;
+    word-break: break-word;
+    font-weight: 20px;
+    font-weight: 100;
+    color: #e9a5a5;
+    font-family: inherit;
+    /* font-family: 'Poppins', sans-serif; */
+}
+.social1{
+        /* margin-top: 14px; */
+    /* justify-content: center; */
+    /* padding-left: 23%; */
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.social1{
+    
+
+}
+.padding{
+    padding: 6px;
+}
