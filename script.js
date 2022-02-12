@@ -57,6 +57,26 @@
 //     //     }
 //     // });
 // });
+let ticketsContainer = document.querySelector(".sidebar");
+ticketsContainer.addEventListener("mouseover" , function(e){
+    console.log("half");
+    let ticketModal = document.createElement("div");
+    ticketModal.classList.add("card1");
+    ticketModal.innerHTML = `<img src="./images/thumbnailmicrosoft.png" alt="Portfolio" style="width:100%">
+    <div class="containerport">
+      <h4 class="margin"><b>Shivam Singh</b></h4> 
+      <p class="margin">Portfolio Netlify Click Bell Icon..</p> 
+    </div>
+  `;
+    document.querySelector("body").append(ticketModal);
+});
+
+ticketsContainer.addEventListener("mouseout" , function(e){
+    console.log("full");
+    document.querySelector(".card1").remove();
+
+});
+
 
 $(document).ready(function() {
     $(window).scroll(function() {

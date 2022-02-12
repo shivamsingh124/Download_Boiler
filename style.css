@@ -10,7 +10,104 @@
 html {
     scroll-behavior: smooth;
 }
+.sidebar {
+    position: fixed;
+    top: 5%;
+    z-index: 999;
+    right: 6%;
+}
+.sidebar {
+    top: 11%;
+    right: 2%;
+    position: fixed;
+}
+.flex {
+    height: 80px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.flex a {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+.flex a img {
+    position: relative !important;
+}.demoanimation {
+    display: flex;
+    position: absolute;
+    background: linear-gradient(45deg, #FFFF00, transparent);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    animation: fadeinout 2s linear forwards infinite;
+    align-items: center;
+    justify-content: center;
+}.iconmessage{
+    font-weight: 100;
+    color: red;
+}
+@keyframes fadeinout {
+    0%,
+    100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+.containerport {
+    padding: 2px 20%;
+  }
+  .margin{
+      margin: 0px;
+  }
+  .margin b{
+      font-weight: bold;
+      font-family: "Satisfy";
+    font-size: 2em;
+    /* background-color: #fafafa; */
+    color: #808080;
+    cursor: none;
+  }
+  .containerport p{
+    margin: 0;
+    padding: 0;
+    /* height: 6000px; */
+    font-family: "Satisfy";
+    font-size: 2em;
+    /* background-color: #fafafa; */
+    color: #808080;
+    cursor: none;
 
+  }
+
+.card1 {
+    border-radius: 31px;
+    top: 41px;
+    right: 12vw;
+    position: fixed;
+    z-index: 500000;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    width: 24%;
+    background: wheat;
+  }
+  .card1 img{
+      border-radius: 10px;
+  }
+  .sidebar b{
+    font-weight: 500;
+    font-family: "Satisfy";
+    font-size: 1em;
+    /* background-color: #fafafa; */
+    color: #808080;
+    cursor: none;
+  }
+  .card1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
 .max-width {
     max-width: 1300px;
     padding: 0 80px;
@@ -1144,4 +1241,14 @@ footer .icons i {
 }
 .padding{
     padding: 6px;
+}
+::-webkit-scrollbar {
+    width: 12px;
+}::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}::-webkit-scrollbar-track {
+    background: #edd3d3;
+}::selection {
+    background: #f2c69b;
 }
